@@ -1,0 +1,39 @@
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <table>
+                <thead>
+                  <tr *ngFor="let user of users">
+                    
+                    <td>
+                        
+                    </td>
+                    <td>
+                        {{user.password}}
+                    </td>
+                  </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div> -->
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Username</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last name</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.username}}</td>
+        <td>{{user.firstname}}</td>
+        <td>{{user.lastname}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.roll}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>

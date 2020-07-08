@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="Uname">*User name:</label>
+                <input class="form-control" id="Uname" [(ngModel)]="user.username" name="Uname" type="text" required>
+                <label for="Fname">First name:</label>
+                <input class="form-control" id="Fname" [(ngModel)]="user.fname" name="Fname" type="text">
+                <label for="Lname">Last name:</label>
+                <input class="form-control" id="Lname" [(ngModel)]="user.lname" name="Lname" type="text">
+                <label for="mail">*Email:</label>
+                <input class="form-control" id="mail" [(ngModel)]="user.email" name="mail" type="email" required>
+                <label for="password">*Password:</label>
+                <input class="form-control" id="password" [(ngModel)]="user.password" name="password" type="password" required>
+                <label for="conpass">*Confirm password:</label>
+                <input class="form-control" id="conpass" name="conpass" type="password" required>
+                <br>
+                <div class="form-control btn btn-success" (click)="postuser()" type="submit">Register</div>
+                <p>Have an account? <a routerLink="/login">Login here</a></p>
+                <h1>{{user.username}}</h1>
+            </div>
+        </form>
+    </div>
+</div>
