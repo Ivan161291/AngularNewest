@@ -3,11 +3,8 @@
         <form>
             <div class="form-group">
                 <label for="Uname">*User name:</label>
-<<<<<<< HEAD
                 <input class="form-control" id="Uname" [(ngModel)]="user.username" name="Uname" type="text" required>
-=======
-                <input class="form-control" id="Uname" [(ngModel)]="user.uname" name="Uname" type="text" required>
->>>>>>> 08730b78e5e860b48980db9504737f83f0646b3b
+
                 <label for="Fname">First name:</label>
                 <input class="form-control" id="Fname" [(ngModel)]="user.fname" name="Fname" type="text">
                 <label for="Lname">Last name:</label>
@@ -15,21 +12,14 @@
                 <label for="mail">*Email:</label>
                 <input class="form-control" id="mail" [(ngModel)]="user.email" name="mail" type="email" required>
                 <label for="password">*Password:</label>
-<<<<<<< HEAD
                 <input class="form-control" id="password" [(ngModel)]="user.password" name="password" type="password" required>
-=======
-                <input class="form-control" id="password" [(ngModel)]="user.pass" name="password" type="password" required>
->>>>>>> 08730b78e5e860b48980db9504737f83f0646b3b
                 <label for="conpass">*Confirm password:</label>
                 <input class="form-control" id="conpass" name="conpass" type="password" required>
                 <br>
                 <div class="form-control btn btn-success" (click)="postuser()" type="submit">Register</div>
                 <p>Have an account? <a routerLink="/login">Login here</a></p>
-<<<<<<< HEAD
-                <h1>{{user.username}}</h1>
-=======
+
                 <h1>{{user.uname}}</h1>
->>>>>>> 08730b78e5e860b48980db9504737f83f0646b3b
             </div>
         </form>
     </div>
